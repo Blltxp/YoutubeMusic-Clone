@@ -1,0 +1,1 @@
+enum MediaType { image, artist, album, song, playlist, podcast }
