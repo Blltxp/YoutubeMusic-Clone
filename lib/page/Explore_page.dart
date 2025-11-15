@@ -49,29 +49,34 @@ class ExplorePage extends StatelessWidget {
           // ปุ่ม "มาใหม่," "อันดับ," และ "อารมณ์และแนวเพลง"
           const SliverToBoxAdapter(
             child: Padding(
-              padding:
-                  EdgeInsets.only(left: 18, right: 20.0, top: 20, bottom: 20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  FilterButton(
-                    title: 'มาใหม่',
-                    icon: Icons.new_releases,
-                    color: Colors.white,
-                  ),
-                  FilterButton(
-                    title: 'อันดับ',
-                    icon: Icons.trending_up,
-                    color: Colors.white,
-                  ),
-                  FilterButton(
-                    title: 'อารมณ์และแนวเพลง',
-                    icon: Icons.mood,
-                    color: Colors.white,
-                  ),
-                ],
-              ),
-            ),
+                padding:
+                    EdgeInsets.only(left: 18, right: 20.0, top: 20, bottom: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Expanded(
+                      child: FilterButton(
+                        title: 'มาใหม่',
+                        icon: Icons.new_releases,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Expanded(
+                      child: FilterButton(
+                        title: 'อันดับ',
+                        icon: Icons.trending_up,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Expanded(
+                      child: FilterButton(
+                        title: 'อารมณ์และแนวเพลง',
+                        icon: Icons.mood,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                )),
           ),
 
           // ส่วนของอัลบั้มและซิงเกิลใหม่

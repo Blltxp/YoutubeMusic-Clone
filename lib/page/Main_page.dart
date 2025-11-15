@@ -61,10 +61,10 @@ class MainPageState extends State<MainPage> {
         const ReelPage(),
         ExplorePage(controller: _exploreController),
         LibraryPage(controller: _libraryController),
-        ListDownloadPage(),
-        FromDirectoryPage(),
+        //ListDownloadPage(),
+        //FromDirectoryPage(),
       ];
-      _selectedLibraryPageIndex = 3;
+      _selectedLibraryPageIndex = 4;
     } else {
       _pages = [
         HomePage(controller: _homeController, user: widget.currentUser),

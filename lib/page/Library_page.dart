@@ -127,10 +127,9 @@ class _LibraryPageState extends State<LibraryPage> {
     return SliverGrid(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: 1,
-        mainAxisSpacing: 10.0,
-        crossAxisSpacing: 10.0,
-        mainAxisExtent: 280,
+        childAspectRatio: 1, // ✅ cell เป็นสี่เหลี่ยมจัตุรัส responsive
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 10,
       ),
       delegate: SliverChildBuilderDelegate(
         (context, index) {
@@ -138,60 +137,55 @@ class _LibraryPageState extends State<LibraryPage> {
           final imageUrl = (item['imageUrl'] is String)
               ? item['imageUrl']
               : 'assets/images/placeholder.png';
-          bool isArtist = item['type'] == 'artist';
-          Artist? artistForDetail;
-          if (isArtist) {
-            artistForDetail = artists
-                .firstWhere((artist) => artist.id == item['id'], orElse: () {
-              return Artist(
-                  id: -1,
-                  name: "Unknown Artist",
-                  followers: 0,
-                  imageUrl: '',
-                  profileBackgroundUrl: '');
-            });
-          }
+          final bool isArtist = item['type'] == 'artist';
+
           return GestureDetector(
             onTap: () {
-              if (isArtist &&
-                  artistForDetail != null &&
-                  artistForDetail.id != -1) {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) =>
-                        ArtistDetailPage(artist: artistForDetail!),
+              if (isArtist) {
+                final artistForDetail = artists.firstWhere(
+                  (artist) => artist.id == item['id'],
+                  orElse: () => Artist(
+                    id: -1,
+                    name: "Unknown Artist",
+                    followers: 0,
+                    imageUrl: '',
+                    profileBackgroundUrl: '',
                   ),
                 );
-              } else if (!isArtist) {}
+                if (artistForDetail.id != -1) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          ArtistDetailPage(artist: artistForDetail),
+                    ),
+                  );
+                }
+              }
             },
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  isArtist
-                      ? GridArtistImage(
-                          imageUrl: imageUrl,
-                          size: 180.0,
-                          isCircular: true,
-                        )
-                      : GridPlaylistImage(
-                          playlist: item,
-                          size: 180.0,
-                        ),
-                  const SizedBox(height: 8),
-                  Text(
-                    item['name'] ?? 'Unnamed',
-                    style: const TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center,
-                    overflow: TextOverflow.ellipsis,
-                    maxLines: 2,
+            child: Column(
+              children: [
+                Expanded(
+                  child: AspectRatio(
+                    aspectRatio: 1,
+                    child: isArtist
+                        ? ClipOval(
+                            child: Image.asset(imageUrl, fit: BoxFit.cover),
+                          )
+                        : Image.asset(imageUrl, fit: BoxFit.cover),
                   ),
-                  GridSubtitleFormatted(item: item, currentUser: currentUser),
-                ],
-              ),
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  item['name'] ?? 'Unnamed',
+                  style: const TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 2,
+                ),
+                GridSubtitleFormatted(item: item, currentUser: currentUser),
+              ],
             ),
           );
         },
