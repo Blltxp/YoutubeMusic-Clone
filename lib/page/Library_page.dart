@@ -122,74 +122,77 @@ class _LibraryPageState extends State<LibraryPage> {
     );
   }
 
-  SliverGrid buildGridView(
+  SliverPadding buildGridView(
       List<Map<String, dynamic>> displayItems, User currentUser) {
-    return SliverGrid(
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        childAspectRatio: 1, // ✅ cell เป็นสี่เหลี่ยมจัตุรัส responsive
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
-      ),
-      delegate: SliverChildBuilderDelegate(
-        (context, index) {
-          final item = displayItems[index];
-          final imageUrl = (item['imageUrl'] is String)
-              ? item['imageUrl']
-              : 'assets/images/placeholder.png';
-          final bool isArtist = item['type'] == 'artist';
+    return SliverPadding(
+      padding: const EdgeInsets.only(bottom: 80),
+      sliver: SliverGrid(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          childAspectRatio: 1, 
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+        ),
+        delegate: SliverChildBuilderDelegate(
+          (context, index) {
+            final item = displayItems[index];
+            final imageUrl = (item['imageUrl'] is String)
+                ? item['imageUrl']
+                : 'assets/images/placeholder.png';
+            final bool isArtist = item['type'] == 'artist';
 
-          return GestureDetector(
-            onTap: () {
-              if (isArtist) {
-                final artistForDetail = artists.firstWhere(
-                  (artist) => artist.id == item['id'],
-                  orElse: () => Artist(
-                    id: -1,
-                    name: "Unknown Artist",
-                    followers: 0,
-                    imageUrl: '',
-                    profileBackgroundUrl: '',
-                  ),
-                );
-                if (artistForDetail.id != -1) {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) =>
-                          ArtistDetailPage(artist: artistForDetail),
+            return GestureDetector(
+              onTap: () {
+                if (isArtist) {
+                  final artistForDetail = artists.firstWhere(
+                    (artist) => artist.id == item['id'],
+                    orElse: () => Artist(
+                      id: -1,
+                      name: "Unknown Artist",
+                      followers: 0,
+                      imageUrl: '',
+                      profileBackgroundUrl: '',
                     ),
                   );
+                  if (artistForDetail.id != -1) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            ArtistDetailPage(artist: artistForDetail),
+                      ),
+                    );
+                  }
                 }
-              }
-            },
-            child: Column(
-              children: [
-                Expanded(
-                  child: AspectRatio(
-                    aspectRatio: 1,
-                    child: isArtist
-                        ? ClipOval(
-                            child: Image.asset(imageUrl, fit: BoxFit.cover),
-                          )
-                        : Image.asset(imageUrl, fit: BoxFit.cover),
+              },
+              child: Column(
+                children: [
+                  Expanded(
+                    child: AspectRatio(
+                      aspectRatio: 1,
+                      child: isArtist
+                          ? ClipOval(
+                              child: Image.asset(imageUrl, fit: BoxFit.cover),
+                            )
+                          : Image.asset(imageUrl, fit: BoxFit.cover),
+                    ),
                   ),
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  item['name'] ?? 'Unnamed',
-                  style: const TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                  overflow: TextOverflow.ellipsis,
-                  maxLines: 2,
-                ),
-                GridSubtitleFormatted(item: item, currentUser: currentUser),
-              ],
-            ),
-          );
-        },
-        childCount: displayItems.length,
+                  const SizedBox(height: 8),
+                  Text(
+                    item['name'] ?? 'Unnamed',
+                    style: const TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
+                    overflow: TextOverflow.ellipsis,
+                    maxLines: 2,
+                  ),
+                  GridSubtitleFormatted(item: item, currentUser: currentUser),
+                ],
+              ),
+            );
+          },
+          childCount: displayItems.length,
+        ),
       ),
     );
   }
@@ -197,7 +200,7 @@ class _LibraryPageState extends State<LibraryPage> {
   SliverPadding buildListView(
       List<Map<String, dynamic>> displayItems, User currentUser) {
     return SliverPadding(
-      padding: const EdgeInsets.only(bottom: 50),
+      padding: const EdgeInsets.only(bottom: 80),
       sliver: SliverList(
         delegate: SliverChildBuilderDelegate(
           (context, index) {

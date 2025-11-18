@@ -61,12 +61,18 @@ class ExplorePage extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
+                    SizedBox(
+                      width: 10,
+                    ),
                     Expanded(
                       child: FilterButton(
                         title: 'อันดับ',
                         icon: Icons.trending_up,
                         color: Colors.white,
                       ),
+                    ),
+                    SizedBox(
+                      width: 10,
                     ),
                     Expanded(
                       child: FilterButton(

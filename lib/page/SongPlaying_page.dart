@@ -1388,13 +1388,13 @@ class _SongPlayingPageState extends State<SongPlayingPage> {
                       )),
                   Positioned(
                       top: 30,
-                      right: 60,
+                      right: 50,
                       child: IconButton(
                           icon: const Icon(Icons.tv, color: Colors.white),
                           onPressed: () {})),
                   Positioned(
                       top: 30,
-                      right: 10,
+                      right: 8,
                       child: IconButton(
                           icon:
                               const Icon(Icons.more_vert, color: Colors.white),
