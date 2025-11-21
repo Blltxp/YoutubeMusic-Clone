@@ -1,58 +1,54 @@
-
 # 📱 YouTube Music Clone – UI Preview
 
 This repository showcases the UI design and interaction of a YouTube Music clone app.  
 It includes screenshots and preview clips to demonstrate key features such as reels, playback, playlists, and ads.
-
 
 ---
 
 ## 📼 ScreenRecord
 
 **Music Player**  
-[![MusicPlayer](./assets/preview/Screenshot_3.jpg)](./assets/preview/ScreenRecord_Songplay.mp4)  
-*Click the image to watch the clip*
+<a href="./assets/preview/ScreenRecord_Songplay.mp4">
+  <img src="./assets/preview/Screenshot_3.jpg" alt="MusicPlayer Thumbnail" width="250"/>
+</a>  
+*Click the thumbnail to watch the clip*
 
-**Reels**
-[![Reels](./assets/preview/Screenshot_Reels.jpg)](./assets/preview/ScreenRecord_reels.mp4)  
-*Click the image to watch the clip*
+**Reels**  
+<a href="./assets/preview/ScreenRecord_reels.mp4">
+  <img src="./assets/preview/Screenshot_1.jpg" alt="Reels Thumbnail" width="250"/>
+</a>  
+*Click the thumbnail to watch the clip*
 
 ---
 
 ## 🖼️ Screenshots
 
 **Home**  
-![Home](./assets/preview/Screenshot_1.jpg)
+<img src="./assets/preview/Screenshot_1.jpg" alt="Home" width="300"/>
 
 **Tab Playing On Navbar**  
-![TabPlaying](./assets/preview/Screenshot_2.jpg)
+<img src="./assets/preview/Screenshot_2.jpg" alt="TabPlaying" width="300"/>
 
 **Music Player**  
-![MusicPlayerScreenShot](./assets/preview/Screenshot_3.jpg)
+<img src="./assets/preview/Screenshot_3.jpg" alt="MusicPlayer" width="300"/>
 
 **Music Queue**  
-![MusicQueue](./assets/preview/Screenshot_4.jpg)
+<img src="./assets/preview/Screenshot_4.jpg" alt="MusicQueue" width="300"/>
 
 **Advertisement**  
-![Adversite](./assets/preview/Screenshot_Ads.jpg)
+<img src="./assets/preview/Screenshot_Ads.jpg" alt="Advertisement" width="300"/>
 
 ---
 
 ## 🛠️ Tech Stack
-- Flutter
-- Custom UI components
-- Local asset management
+- Flutter  
+- Custom UI components  
+- Local asset management  
 
 ---
 
 ## 🚀 Usage
 Use this repository to:
-
-- Reference UI/UX patterns for media apps
-- Present design flows in pitch decks or client demos
-- Inspire layout ideas for mobile-first experience
-=======
 - Reference UI/UX patterns for media apps  
 - Present design flows in pitch decks or client demos  
 - Inspire layout ideas for mobile-first experiences
-
