@@ -5,13 +5,12 @@ This repository showcases the UI design and interaction of a YouTube Music clone
 📼 ScreenRecord
 
 **Music Player**
-![MusicPlayerScreenRecord](./assets/preview/ScreenRecord_Songplay.mp4)
+<video src="./assets/preview/ScreenRecord_Songplay.mp4" controls width="400"></video>
 
 --
 
 **Reels**
-![Reels](./assets/preview/ScreenRecord_reels.mp4)
-
+<video src="./assets/preview/ScreenRecord_reels.mp4" controls width="400"></video>
 
 ---
 
