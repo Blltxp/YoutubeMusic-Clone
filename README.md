@@ -1,23 +1,9 @@
-<<<<<<< HEAD
-📱 YouTube Music Clone – UI Preview
-This repository showcases the UI design and interaction of a YouTube Music clone app. It includes screenshots and a preview clip to demonstrate key features such as reels, playback, playlists, and ads.
 
-
-📼 ScreenRecord
-
-**Music Player**
-<video src="./assets/preview/ScreenRecord_Songplay.mp4" controls width="400"></video>
-
---
-
-**Reels**
-<video src="./assets/preview/ScreenRecord_reels.mp4" controls width="400"></video>
-=======
 # 📱 YouTube Music Clone – UI Preview
 
 This repository showcases the UI design and interaction of a YouTube Music clone app.  
 It includes screenshots and preview clips to demonstrate key features such as reels, playback, playlists, and ads.
->>>>>>> a686b3a (Update Readme)
+
 
 ---
 
@@ -27,7 +13,7 @@ It includes screenshots and preview clips to demonstrate key features such as re
 [![MusicPlayer](./assets/preview/Screenshot_3.jpg)](./assets/preview/ScreenRecord_Songplay.mp4)  
 *Click the image to watch the clip*
 
-**Reels**  
+**Reels**
 [![Reels](./assets/preview/Screenshot_Reels.jpg)](./assets/preview/ScreenRecord_reels.mp4)  
 *Click the image to watch the clip*
 
@@ -53,15 +39,15 @@ It includes screenshots and preview clips to demonstrate key features such as re
 ---
 
 ## 🛠️ Tech Stack
-- Flutter  
-- Custom UI components  
-- Local asset management  
+- Flutter
+- Custom UI components
+- Local asset management
 
 ---
 
 ## 🚀 Usage
 Use this repository to:
-<<<<<<< HEAD
+
 - Reference UI/UX patterns for media apps
 - Present design flows in pitch decks or client demos
 - Inspire layout ideas for mobile-first experience
@@ -69,4 +55,4 @@ Use this repository to:
 - Reference UI/UX patterns for media apps  
 - Present design flows in pitch decks or client demos  
 - Inspire layout ideas for mobile-first experiences
->>>>>>> a686b3a (Update Readme)
+
