@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 📱 YouTube Music Clone – UI Preview
 This repository showcases the UI design and interaction of a YouTube Music clone app. It includes screenshots and a preview clip to demonstrate key features such as reels, playback, playlists, and ads.
 
@@ -11,34 +12,61 @@ This repository showcases the UI design and interaction of a YouTube Music clone
 
 **Reels**
 <video src="./assets/preview/ScreenRecord_reels.mp4" controls width="400"></video>
+=======
+# 📱 YouTube Music Clone – UI Preview
+
+This repository showcases the UI design and interaction of a YouTube Music clone app.  
+It includes screenshots and preview clips to demonstrate key features such as reels, playback, playlists, and ads.
+>>>>>>> a686b3a (Update Readme)
 
 ---
 
-🖼️ Screenshots
+## 📼 ScreenRecord
 
-**Home**
+**Music Player**  
+[![MusicPlayer](./assets/preview/Screenshot_3.jpg)](./assets/preview/ScreenRecord_Songplay.mp4)  
+*Click the image to watch the clip*
+
+**Reels**  
+[![Reels](./assets/preview/Screenshot_Reels.jpg)](./assets/preview/ScreenRecord_reels.mp4)  
+*Click the image to watch the clip*
+
+---
+
+## 🖼️ Screenshots
+
+**Home**  
 ![Home](./assets/preview/Screenshot_1.jpg)
--
-**Tab Playing On Navbar**
+
+**Tab Playing On Navbar**  
 ![TabPlaying](./assets/preview/Screenshot_2.jpg)
--
-**Music Player**
+
+**Music Player**  
 ![MusicPlayerScreenShot](./assets/preview/Screenshot_3.jpg)
--
-**Music Queue**
+
+**Music Queue**  
 ![MusicQueue](./assets/preview/Screenshot_4.jpg)
--
-**Adsversite**
+
+**Advertisement**  
 ![Adversite](./assets/preview/Screenshot_Ads.jpg)
 
-----
+---
 
-🛠️ Tech Stack
-- Flutter
-- Custom UI components
-- Local asset management
-🚀 Usage
+## 🛠️ Tech Stack
+- Flutter  
+- Custom UI components  
+- Local asset management  
+
+---
+
+## 🚀 Usage
 Use this repository to:
+<<<<<<< HEAD
 - Reference UI/UX patterns for media apps
 - Present design flows in pitch decks or client demos
 - Inspire layout ideas for mobile-first experience
+=======
+- Reference UI/UX patterns for media apps  
+- Present design flows in pitch decks or client demos  
+- Inspire layout ideas for mobile-first experiences
+>>>>>>> a686b3a (Update Readme)
