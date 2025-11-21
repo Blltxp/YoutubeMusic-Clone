@@ -15,7 +15,7 @@ It includes screenshots and preview clips to demonstrate key features such as re
 
 **🎬 Reels**  
 <a href="https://youtube.com/shorts/Vup3-PdHCiE?feature=share" target="_blank">
-  <img src="./assets/preview/Screenshot_1.jpg" alt="Reels Thumbnail" width="250"/>
+  <img src="./assets/preview/Screenshot_Reels.jpg" alt="Reels Thumbnail" width="250"/>
 </a>  
 *Click the thumbnail to watch the clip on YouTube*
 
