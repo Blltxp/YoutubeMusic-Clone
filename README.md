@@ -1,16 +1,20 @@
-# youtubemusic_clone
+📱 YouTube Music Clone – UI Preview
+This repository showcases the UI design and interaction of a YouTube Music clone app. It includes screenshots and a preview clip to demonstrate key features such as reels, playback, playlists, and ads.
+🎬 Preview Clip
+<video src="assets/preview/ClipScreeshot_reels.mp4" controls width="300"></video>
+Short reel preview demonstrating vertical content flow.
+หาก GitHub ไม่รองรับการเล่นวิดีโอโดยตรง ให้ใช้ภาพแทนจาก ClipScreeshot_reels.png หรือแนบลิงก์ไปยังแพลตฟอร์มที่โฮสต์วิดีโอ เช่น YouTube หรือ Loom
 
-A new Flutter project.
+🖼️ Screenshots
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ 
+🛠️ Tech Stack
+- Flutter
+- Custom UI components
+- Local asset management
+🚀 Usage
+Use this repository to:
+- Reference UI/UX patterns for media apps
+- Present design flows in pitch decks or client demos
+- Inspire layout ideas for mobile-first experience
