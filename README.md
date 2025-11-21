@@ -7,17 +7,17 @@ It includes screenshots and preview clips to demonstrate key features such as re
 
 ## 📼 ScreenRecord
 
-**Music Player**  
-<a href="./assets/preview/ScreenRecord_Songplay.mp4">
+**🎵 Music Player**  
+<a href="https://youtube.com/shorts/c7S_JzWDVvg?feature=share" target="_blank">
   <img src="./assets/preview/Screenshot_3.jpg" alt="MusicPlayer Thumbnail" width="250"/>
 </a>  
-*Click the thumbnail to watch the clip*
+*Click the thumbnail to watch the clip on YouTube*
 
-**Reels**  
-<a href="./assets/preview/ScreenRecord_reels.mp4">
+**🎬 Reels**  
+<a href="https://youtube.com/shorts/Vup3-PdHCiE?feature=share" target="_blank">
   <img src="./assets/preview/Screenshot_1.jpg" alt="Reels Thumbnail" width="250"/>
 </a>  
-*Click the thumbnail to watch the clip*
+*Click the thumbnail to watch the clip on YouTube*
 
 ---
 
